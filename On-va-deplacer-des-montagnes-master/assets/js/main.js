@@ -20,7 +20,7 @@
         var pictures = $('.pictures');
         pictures.masonry({
             itemSelector: '.pic',
-            columnWidth: 1,
+            columnWidth: 1
         });
     });
 })()

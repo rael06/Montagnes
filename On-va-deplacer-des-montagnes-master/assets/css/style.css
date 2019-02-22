@@ -8,6 +8,10 @@ body {
     overflow-x: hidden;
 }
 
+.typcn {
+	font-size: 60px;
+}
+
 /* Header */
 #home {
     background-image: url('../images/bg_header.jpg');
@@ -97,10 +101,7 @@ a[data-toggle="collapse"] {
 
 .partenaires {
     background-color: white;
-    position: relative;
 }
-
-
 
 .img-height {
     height: 96px;
@@ -275,6 +276,47 @@ footer p {
 .pictures > div {
 	width: 98.9%;
 }
+
+/* Partners Logos */
+ .p_logo {
+ 	width: 100%;
+ }
+
+ #logo_1 {
+	background-image: url("../images/logo-sample-01.jpg");
+	background-size: cover;
+	padding-bottom: 67%;
+ }
+
+ #logo_2 {
+	background-image: url("../images/logo-sample-02.jpg");
+	background-size: cover;
+	padding-bottom: 75%;
+ }
+
+  #logo_3 {
+	background-image: url("../images/logo-sample-03.png");
+	background-size: cover;
+	padding-bottom: 61%;
+ }
+
+  #logo_4 {
+	background-image: url("../images/logo-sample-04.jpg");
+	background-size: cover;
+	padding-bottom: 49%;
+ }
+
+  #logo_5 {
+	background-image: url("../images/logo-sample-05.jpg");
+	background-size: cover;
+	padding-bottom: 75%;
+ }
+
+  #logo_6 {
+	background-image: url("../images/logo-sample-06.png");
+	background-size: cover;
+	padding-bottom: 62%;
+ }
 
 @media screen and (min-width: 767px) {
 	.pictures {

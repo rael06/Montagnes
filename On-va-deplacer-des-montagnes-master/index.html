@@ -16,6 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/masonry-docs.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel='stylesheet' href='assets/typicons/font/typicons.min.css' />
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
@@ -57,26 +58,25 @@
 		<!-- /Menu -->
 
 		<!-- Header -->
-		<header id="home" class="container-fluid py-5">
+		<header id="home" class="container-fluid pt-3">
 			<button type="button" id="sidebarCollapse" class="btn btn-link">
-				<i class="fa fa-bars fa-2x" style="color:#f2f7f8"></i>
+				<i class="fa fa-bars fa-2x" style="color:#000"></i>
 			</button>
 
 			<div class="row pt-5">
-				<div class="col-sm-3 offset-1offset-xl-1">
+				<div id="logo_simplon" class="col-3 offset-1">
 					<img src="assets/images/your_logo.png" class="img-fluid" alt="logo">
 				</div>
 
 			</div>
 
-			<div class="row pb-5 justify-content-center text-center text-white">
-				<div class="col-sm-8">
+			<div class="row pb-3 pb-xl-5 justify-content-center text-center text-white">
+				<div class="col-8">
 					<h1 class="pb-5 font-weight-bold">Kids, you'll move mountains</h1>
-					<p>This is a simple module, a simple jumbotron-style component for calling extra-attention
+					<p style="font-size:20px">This is a simple module, a simple jumbotron-style component for calling extra-attention
 						to
 					featured content or information.</p>
-					<a class="btn btn-primary btn-lg my-4" href="#" role="button">Learn more</a>
-
+					<a class="btn btn-primary btn-lg mb-xl-5" href="#" role="button">Learn more</a>
 				</div>
 			</div>
 		</header>
@@ -84,26 +84,26 @@
 
 		<!-- Part 2 -->
 		<section id="features" class="container col-11 col-lg-10">
-			<div class="row no-gutters justify-content-center text-center mt-5">
+			<div class="row no-gutters justify-content-center justify-content-xl-around text-center mt-4">
 				<!-- I -->
-				<div class="col-xl-4">
-					<i class="fas fa-2x fa-pen"></i>
+				<div class="col-xl-3">
+					<i class="typcn typcn-pencil"></i>
 					<h3 class="icon-title">Consectetur Risus</h3>
 					<p class="text-title">Cras justo odio, dapibus ac facilisis in egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
 				</div>
 				<!-- /I -->
 
 				<!-- II -->
-				<div class="col-xl-4">
-					<i class="fas fa-2x fa-camera"></i>
+				<div class="col-xl-3">
+					<i class="typcn typcn-camera-outline"></i>
 					<h3 class="icon-title">Ultricies Aenean</h3>
 					<p class="text-title">Cras justo odio, dapibus ac facilisis in egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
 				<!-- /II -->
 
 				<!-- III -->
-				<div class="col-xl-4">
-					<i class="far fa-2x fa-bookmark"></i>
+				<div class="col-xl-3">
+					<i class="typcn typcn-bookmark"></i>
 					<h3 class="icon-title">Cras Sollicitudin</h3>
 					<p class="text-title">Etiam porta sem malesuada magna mollis euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.</p>
 				</div>
@@ -168,7 +168,7 @@
 		<section id="photos" class="background_5 py-4">
 
 			<!-- anchors -->
-			<div class="col-12 py-3 px-0 d-flex flex-wrap justify-content-md-center">
+			<div class="col-12 py-3 px-0 d-flex text-info flex-wrap justify-content-md-center">
 				<a href="#" class="ml-4">ALL</a>
 				<a href="#" class="ml-4">LANDSCAPE</a>
 				<a href="#" class="ml-4">EQUIPMENT</a>
@@ -223,32 +223,38 @@
 		<!-- /Part 6 -->
 
 		<!-- Part 7 -->
-		<section class="partenaires">
-			<div class="row justify-content-center">
-				<div class="col-9">
-					<div class="row  py-5">
-						<div class="col-md-2">
-							<img src="assets/images/logo-sample-01.jpg" class="img-height" alt="logo">
-						</div>
-						<div class="col-md-2">
-							<img src="assets/images/logo-sample-02.jpg" class="img-height" alt="logo">
-						</div>
-						<div class="col-md-2">
-							<img src="assets/images/logo-sample-03.png" class="img-height" alt="logo">
-						</div>
-						<div class="col-md-2">
-							<img src="assets/images/logo-sample-04.jpg" class="img-height" alt="logo">
-						</div>
-						<div class="col-md-2">
-							<img src="assets/images/logo-sample-05.jpg" class="img-height" alt="logo">
-						</div>
-						<div class="col-md-2">
-							<img src="assets/images/logo-sample-06.png" class="img-height" alt="logo">
-						</div>
-					</div>
+		<section class="partenaires container-fluid justify-content-center py-5">
+			<div class="partners_logos col-12 col-md-7 col-xl-10 mx-auto d-xl-flex">
+				<!-- 1 -->	
+				<div id="logo_1-div" class="p_logo">
+					<div id="logo_1"></div>
 				</div>
 
-			</div>
+				<!-- 2 -->
+				<div id="logo_2-div" class="p_logo">
+					<div id="logo_2"></div>
+				</div>
+
+				<!-- 3 -->			
+				<div id="logo_3-div" class="p_logo">
+					<div id="logo_3"></div>
+				</div>
+
+				<!-- 4 -->			
+				<div id="logo_4-div" class="p_logo">
+					<div id="logo_4"></div>
+				</div>
+
+				<!-- 5 -->			
+				<div id="logo_5-div" class="p_logo">
+					<div id="logo_5"></div>
+				</div>
+
+				<!-- 6 -->			
+				<div id="logo_6-div" class="p_logo">
+					<div id="logo_6"></div>
+				</div>
+			</div>	
 		</section>
 		<!-- /Part 7 -->
 
@@ -273,7 +279,7 @@
 		<!-- /Part 8 -->
 
 		<!-- Footer -->
-		<footer class="container-fluid">
+		<footer class="container-fluid pb-3">
 			<div class="row justify-content-space-around">
 				<div class="col-sm-4 offset-xl-1 pt-5">
 					<p>Your Logo</p>
