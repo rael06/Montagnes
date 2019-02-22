@@ -1,10 +1,11 @@
 * {
-	margin: 0;
+    margin: 0;
 }
 
 body {
-    font-family: 'Arvo', sans-serif;
     background: #fafafa;
+    font-family: 'Arvo', sans-serif;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -12,14 +13,11 @@ body {
     background-image: url('../images/bg_header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .img-fluid {
     max-width: 240px;
-}
-
-.header_title {
-	font-size: 7vw;
 }
 
 /* Menu */
@@ -29,21 +27,6 @@ a:focus {
     color: inherit;
     text-decoration: none;
     transition: all 0.3s;
-}
-
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
 }
 
 /* ---------------------------------------------------
@@ -59,33 +42,11 @@ a:focus {
     background: rgb(51, 51, 49);
     color: #fff;
     transition: all 0.3s;
-
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 #sidebar.active {
     left: 0;
-}
-
-#dismiss {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    background: #7386D5;
-    /* Tu peux changer. parce que pour moi font-family ça n'est marche pas bien pour ça je j'ai gardé different color.*/
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.7s;
-}
-
-#dismiss:hover {
-    background: #fff;
-    color: #7386D5;
 }
 
 .overlay {
@@ -122,10 +83,109 @@ a:focus {
     background: rgba(124, 115, 115, 0.3);
 }
 
+#sidebarCollapse {
+    position: absolute;
+    top: 3em;
+    right: 8%;
+}
+
 a[data-toggle="collapse"] {
     position: relative;
 }
+
 /* !Header */
+
+.partenaires {
+    background-color: white;
+    position: relative;
+}
+
+
+
+.img-height {
+    height: 96px;
+    white-space: nowrap;
+}
+
+#contact {
+    position: relative;
+}
+
+#contact-bg {
+    background-image: url('../images/bg_newsletter.jpg');
+    filter: blur(3px);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+footer {
+    background-color: #24323D;
+    /* background-position: 50% 50%; */
+}
+
+footer p {
+    color: white;
+}
+
+#social {
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+.fa-facebook-f {
+    color: #294470;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #294470;
+    border-image: initial;
+    border-radius: 50%;
+    padding: 2% 3.6% 2% 4%;
+}
+
+.fa-twitter {
+    color: #294470;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #294470;
+    border-image: initial;
+    border-radius: 50%;
+    padding: 1.8% 2.2% 1.5% 2.5%;
+}
+
+.fa-tumblr {
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 50%;
+    padding: 1.8% 3.9% 1.8% 3.5%;
+}
+
+.fa-github-alt {
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 50%;
+    padding: 1.2% 2.4% 1.7% 2.5%;
+}
+
+.fa-basketball-ball {
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    border-image: initial;
+    border-radius: 50%;
+    padding: 1.7% 2.6% 1.6% 2.6%;
+}
+
+/* Pictures and Backgrounds */
 .background_2 {
 	background-image: url("../images/bg_nuage.jpg");
 	background-size: cover;
@@ -140,8 +200,7 @@ a[data-toggle="collapse"] {
 	background-image: url("../images/1200.jpeg");
 	background-size: cover;
 	background-position: 50% 50%;
-	height: 274px;
-	width: 274px;
+	padding-bottom: 100%;
 }
 
 .background_4 {
@@ -150,23 +209,102 @@ a[data-toggle="collapse"] {
 	background-position: 50% 50%;
 }
 
-.picture_1 {
+.background_5 {
+	background-color: #CCC;
+}
+
+.pictures {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.pic {
+	width: 100%;
+	margin: 0.5%;
+}
+
+#picture_1 {
 	background-image: url("../images/300.jpeg");
 	background-size: cover;
 	background-position: 50% 50%;
-	height: 50px;
+	padding-bottom: 50%;
 }
 
-@media screen and (min-width: 990px) {
-	.background_3 {
-		height: 770px;
-		width: 770px;
+#picture_2 {
+	background-image: url("../images/776.jpeg");
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-bottom: 214%;
+}
+
+#picture_3 {
+	background-image: url("../images/800.jpeg");
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-bottom: 139%;
+}
+
+#picture_4 {
+	background-image: url("../images/400.jpeg");
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-bottom: 100%;
+}
+
+#picture_5 {
+	background-image: url("../images/2476.jpeg");
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-bottom: 56%;
+}
+
+#picture_6 {
+	background-image: url("../images/439.jpeg");
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-bottom: 75%;
+}
+
+#picture_7 {
+	background-image: url("../images/140.jpeg");
+	background-size: cover;
+	background-position: 50% 50%;
+	padding-bottom: 23%;
+}
+
+.pictures > div {
+	width: 98.9%;
+}
+
+@media screen and (min-width: 767px) {
+	.pictures {
+		margin: 0 auto;
+		width: 90%;
+	}
+
+	#picture_2-div, #picture_3-div, #picture_4-div, #picture_5-div, #picture_6-div {
+		width: 48.95%;
 	}
 }
 
-@media screen and (min-width: 1200px) {
-	.background_3 {
-		height: 385px;
-		width: 385px;
+@media screen and (min-width: 1199px) {
+	.pictures {
+		width: 82vw;
+	}
+
+	.pic {
+		margin: 0.4%;
+	}
+
+	#picture_3 {
+		padding-bottom: 150%;
+	}
+
+	#picture_1-div, #picture_7-div {
+		width: 64.7%;
+	}
+
+	#picture_2-div, #picture_3-div, #picture_4-div, #picture_5-div, #picture_6-div {
+		width: 32%;
 	}
 }
