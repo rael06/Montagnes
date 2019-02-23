@@ -8,6 +8,11 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
 .typcn {
 	font-size: 60px;
 }
@@ -96,18 +101,9 @@ a:focus {
 a[data-toggle="collapse"] {
     position: relative;
 }
-
 /* !Header */
 
-.partenaires {
-    background-color: white;
-}
-
-.img-height {
-    height: 96px;
-    white-space: nowrap;
-}
-
+/* Contact Part 8 */
 #contact {
     position: relative;
 }
@@ -122,95 +118,119 @@ a[data-toggle="collapse"] {
     position: absolute;
 }
 
-footer {
-    background-color: #24323D;
-    /* background-position: 50% 50%; */
-}
-
-footer p {
-    color: white;
-}
-
 #social {
     font-size: 1em;
     white-space: nowrap;
 }
 
-.fa-facebook-f {
-    color: #294470;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #294470;
+#social > i {
     border-image: initial;
     border-radius: 50%;
-    padding: 2% 3.6% 2% 4%;
+}
+
+.fa-facebook-f {
+    color: #294470;
+    border: 2px solid #294470;
+    padding: 2.4% 4.2% 1.5% 4.7%;
 }
 
 .fa-twitter {
     color: #294470;
-    border-width: 2px;
-    border-style: solid;
-    border-color: #294470;
-    border-image: initial;
-    border-radius: 50%;
+    border: 2px solid #294470;
     padding: 1.8% 2.2% 1.5% 2.5%;
 }
 
 .fa-tumblr {
     color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    border-image: initial;
-    border-radius: 50%;
+    border: 2px solid white;
     padding: 1.8% 3.9% 1.8% 3.5%;
 }
 
 .fa-github-alt {
     color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    border-image: initial;
-    border-radius: 50%;
+    border: 2px solid white;
     padding: 1.2% 2.4% 1.7% 2.5%;
 }
 
 .fa-basketball-ball {
     color: white;
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    border-image: initial;
-    border-radius: 50%;
+    border: 2px solid white;
     padding: 1.7% 2.6% 1.6% 2.6%;
 }
+/* !Contact Part 8 */
 
-/* Pictures and Backgrounds */
-.background_2 {
+/* Footer */
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    font-family: "FontAwesome";
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top span {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 17px;
+    top: 13px;
+    font-size: 24px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover span {
+    color: #fff;
+    top: 5px;
+}
+/* !Footer */
+
+/* Pictures, Backgrounds and Logos */
+.background_2 { /* Part 2 Features */
 	background-image: url("../images/bg_nuage.jpg");
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
-.info_box {
+.info_box { /* Part 3 About */
 	background: rgba(100, 220, 255, 0.6);
 }
 
-.background_3 {
+.background_3 { /* Part 4 Blog */
 	background-image: url("../images/1200.jpeg");
 	background-size: cover;
 	background-position: 50% 50%;
 	padding-bottom: 100%;
 }
 
-.background_4 {
+.background_4 { /* Part 5 History */
 	background-image: url("../images/bg_appareil_photo.jpg");
 	background-size: cover;
 	background-position: 50% 50%;
 }
 
-.background_5 {
+.background_5 { /* Part 6 Photos */
 	background-color: #CCC;
 }
 
@@ -277,7 +297,7 @@ footer p {
 	width: 98.9%;
 }
 
-/* Partners Logos */
+        /* Partners Logos */
  .p_logo {
  	width: 100%;
  }
@@ -317,6 +337,8 @@ footer p {
 	background-size: cover;
 	padding-bottom: 62%;
  }
+        /* !Partners Logos */
+ /* !Pictures, Backgrounds, Logos */
 
 @media screen and (min-width: 767px) {
 	.pictures {
@@ -342,11 +364,15 @@ footer p {
 		padding-bottom: 150%;
 	}
 
-	#picture_1-div, #picture_7-div {
-		width: 64.7%;
+	#picture_1-div {
+		width: 64.75%;
 	}
 
+    #picture_7-div {
+        width: 64.65%;
+    }
+
 	#picture_2-div, #picture_3-div, #picture_4-div, #picture_5-div, #picture_6-div {
-		width: 32%;
+		width: 31.95%;
 	}
 }
