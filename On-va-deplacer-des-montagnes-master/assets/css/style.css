@@ -118,6 +118,12 @@ a[data-toggle="collapse"] {
     position: absolute;
 }
 
+.contact-bg-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+}
+
 #social {
     font-size: 1em;
     white-space: nowrap;
